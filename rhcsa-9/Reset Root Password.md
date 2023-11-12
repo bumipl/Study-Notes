@@ -8,3 +8,5 @@ These are the steps that need to be taken.
 3. ``passwd root``
 4. ``touch /.autorelabel``
 5. ``exec /usr/lib/systemd/systemd/`` To reboot the machine or ``/sbin/reboot -f``
+
+   [Link to yuotube video](https://youtu.be/z1INiSUNaBc)
