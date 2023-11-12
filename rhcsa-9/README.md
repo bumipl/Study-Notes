@@ -2,12 +2,6 @@
 
 Hey! Welcome to my RHCSA 9 think tank. 🤠
 
-![Think-Tank](pictures/penguins.png)
-
-As I prepare for the RHCSA 9 exam I will write down everything that I study. Feel free clone this repository and use it how you want. I also welcome pull requests if you want to add information.
-
-I will continually keep adding to the table of contents and to the files listed as my study progresses so I recommend you come back later if you are also studying for the RHCSA or studying Linux in general.
-
 [The official Red Hat 9.1 Release Notes in pdf format.](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/pdf/9.1_release_notes/red_hat_enterprise_linux-9-9.1_release_notes-en-us.pdf)
 
 [The exam objectives](https://github.com/1980is/rhcsa-9/blob/main/RHCSA%209%20Exam%20Objectives.md)
