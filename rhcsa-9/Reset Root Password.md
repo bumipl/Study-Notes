@@ -9,4 +9,5 @@ These are the steps that need to be taken.
 4. ``touch /.autorelabel``
 5. ``exec /usr/lib/systemd/systemd/`` To reboot the machine or ``/sbin/reboot -f``
 
-   [Link to yuotube video](https://youtu.be/z1INiSUNaBc)
+
+   [My Video Tutorial Here](https://youtu.be/z1INiSUNaBc)
