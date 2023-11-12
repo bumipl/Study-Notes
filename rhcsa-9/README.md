@@ -2,7 +2,7 @@
 
 Hey! Welcome to my RHCSA 9 think tank. 🤠
 
-![Think-Tank](pictures/nmtui.png)
+![Think-Tank](pictures/penguins.png)
 
 As I prepare for the RHCSA 9 exam I will write down everything that I study. Feel free clone this repository and use it how you want. I also welcome pull requests if you want to add information.
 
