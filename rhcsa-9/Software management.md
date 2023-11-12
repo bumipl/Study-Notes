@@ -56,7 +56,8 @@ Let's mount it.  ``mount -a``
 
 Now we need to manually create the repository file. \
 Go under "/etc/yum.repos.d/". \
-Create a file, ``vim baseos.repo``
+Create a file 
+``vim baseos.repo``
 
 Let's add the following lines into baseos.repo.
 
@@ -76,6 +77,8 @@ gpgcheck=0
 Now we can check to see if our repository file is okay. \
 ``dnf repolist`` \
 We should see baseos and appstream and no errors.
+
+[Video Tutorial Here](https://youtu.be/NooNhAdeivE?si=aFX6ubcLFwAQ_9Og)
 
 ## DNF Modules
 
