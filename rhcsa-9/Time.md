@@ -2,7 +2,7 @@
 
 ``hwclock`` sets the hardware time.
 If the hardware clock is not correct but the system time is you can sync the hardware time to the 
-system time with ``hwclock --systohc``
+system time with ``hwclock -hctosys`` or copy time from system time to hardware clock ``hwclock -systohc``
 
 Use ``date`` so show current date and time.
 
