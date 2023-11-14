@@ -192,11 +192,11 @@ Manage them using: \
 ### Steps
 
 1. Create the user, must have a passwd.
-   2. ``useradd rambo; passwd rambo``
-2. We need to enable linger for the rambo user.
-   4. ``loginctl enable-linger rambo`` Verify with ``loginctl show-user username``
+   2. ``useradd linda; passwd linda``
+2. We need to enable linger for the linda user.
+   4. ``loginctl enable-linger linda`` Verify with ``loginctl show-user linda``
 3. SSH into the server.
-   4. ssh ``rambo@localhost``
+   4. ssh ``linda@localhost``
 4. Create the directory that Podman will write the systemd unit file to.
 Remember you must be in the folder when you run podman generate systemd, hence the cd command.
    6. ``mkdir -p ~/.config/systemd/user; cd ~/.config/systemd/user``
@@ -214,8 +214,8 @@ check the file and make sure that wanted by is default.target. "WantedBy=default
 11. Let's check the status of the service. It should be enabled but not running.
     12. ``systemctl --user status container-webmaster.service``
 13. To see if it worked we must reboot the server. Once the reboot is over, check if you
-see the nginx process running under user rambo. You can also ``curl localhost:8089``
-    14. ``ps faux | less`` Look for processes under user rambo.
+see the nginx process running under user linda. You can also ``curl localhost:8089``
+    14. ``ps faux | less`` Look for processes under user linda.
 
 ## Container Network
 
