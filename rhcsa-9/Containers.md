@@ -302,10 +302,10 @@ Namespaces enable access by mapping UIDs between the namespace and the host OS.
 
 As file ownership has been taken care of in the preceding steps in "Rootless Containers", you are now ready to bind mount, taking care of SELinux as well.
 
-``podman stop mydb``
-``podman rm mydb``
-``podman run -d --name mydb -e MYSQL_ROOT_PASSWORD=password -v /home/student/mydb:/var/lib/mysql:Z quay.io/centos7/mariadb-103-centos7``
-``ls -Z /home/student``
+1. ``podman stop mydb``
+2. ``podman rm mydb``
+3. ``podman run -d --name mydb -e MYSQL_ROOT_PASSWORD=password -v /home/student/mydb:/var/lib/mysql:Z quay.io/centos7/mariadb-103-centos7``
+4. ``ls -Z /home/student``
 
 ## Debug
 
