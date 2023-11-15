@@ -251,6 +251,15 @@ For a rootless container, you need to make sure that the UID of the user that
 runs the container application is owner of the bind-mounted directory. You can find
 out what user is running the container with ``podman inspect imagename``
 
+### Mounting Storage Inside the container
+
+''sudo mkdir /dbfiles''
+''sudo chmod o+w /dbfiles''
+''sudo chown $user:$user /dbfiles''
+''sudo semanage fcontext -a -t container_file_t "/dbfiles(/.*?"''
+''podman run -d --name mydb -v /dbfiles:/var/lib/mysql:Z -e MYSQL_USER=bob -e MYSQL_PASSWORD=password -e MYSQL_DATABASE=books mariadb -e MYSQL_ROOT_PASSWORD=password''
+
+
 ### NFS
 
 ``podman volume create --driver local --opt type=nfs --opt o=addr=192.168.122.36,rw --opt device=:/nfsdata nfsvol``
