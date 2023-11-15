@@ -219,7 +219,7 @@ see the nginx process running under user linda. You can also ``curl localhost:80
 
 ## Container Network
 
-``podman network list``
+``podman network ls``
 ``podman network inspect``
 ``podman network inspect bridge``
 
