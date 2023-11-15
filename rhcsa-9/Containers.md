@@ -258,7 +258,7 @@ out what user is running the container with ``podman inspect imagename``
 3. ``sudo chown $user:$user /dbfiles``
 4. ``sudo semanage fcontext -a -t container_file_t "/dbfiles(/.*?)"``
 5. ``podman run -d --name mynewdb -v /dbfiles:/var/lib/mysql:Z -e MYSQL_ROOT_PASSWORD=password mariadb``
-
+6. Verify ``podman exec mynewdb ls /var/lib/mysql ``
 
 ### NFS
 
