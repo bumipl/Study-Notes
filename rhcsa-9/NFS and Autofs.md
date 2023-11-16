@@ -41,7 +41,7 @@ Install autofs.
 
 ``dnf install autofs``
 
-In "/etc/auto.master" you'll identify the directory that automount should manage, and the file that is used for additional mount information.
+In ``/etc/auto.master`` you'll identify the directory that automount should manage, and the file that is used for additional mount information.
 
 - ``mkdir /nfsdata``
 - "/nfsdata" is the mounting point and ``/etc/auto.nfsdata`` is a file you create that gives the necessary parameters to mount it.
