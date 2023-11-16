@@ -43,10 +43,10 @@ Install autofs.
 
 In "/etc/auto.master" you'll identify the directory that automount should manage, and the file that is used for additional mount information.
 
-- "/nfsdata" and "/etc/auto.nfsdata"
-- "/nfsdata" is the mounting point and the second line "/etc/auto.nfsdata" is a file you create that gives the necessary parameters to mount it.
-- In "/etc/auto.nfsdata" you'll identify the subdirectory on which to mount, and what to mount.
-- files -rw nfsservername:/nfsdata
+- ``mkdir /nfsdata``
+- "/nfsdata" is the mounting point and ``/etc/auto.nfsdata`` is a file you create that gives the necessary parameters to mount it.
+- In ``/etc/auto.nfsdat`` you'll identify the subdirectory on which to mount, and what to mount.
+- ``echo "files -rw nfsservername:/nfsdata" >> /etc/auto.nfsdata``
 
 Files is a subdirectory under /nfsdata that is created when you cd into it.
 
@@ -56,6 +56,8 @@ Enable and start the autofs service.
 ``systemctl enable --now autofs``
 
 This will automatically create the folders necessary under the root "/" folder. In this example it creates the ''/misc" and "/nfsdata" folders. If you cd /nfsdata, it should be empty. If you ``cd`` into files, even though /nfsdata is empty you will cd into the /nfsdata directory on the nfsserver.
+
+Tip: check ``/etc/auto.misc`` for syntax examples on the exam
 
 ### Home directories
 
