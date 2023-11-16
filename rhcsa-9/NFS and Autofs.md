@@ -44,6 +44,7 @@ Install autofs.
 In ``/etc/auto.master`` you'll identify the directory that automount should manage, and the file that is used for additional mount information.
 
 - ``mkdir /nfsdata``
+- ``echo "/nfsdata  /etc/auto.nfsdata" >> /etc/auto.master``
 - "/nfsdata" is the mounting point and ``/etc/auto.nfsdata`` is a file you create that gives the necessary parameters to mount it.
 - In ``/etc/auto.nfsdat`` you'll identify the subdirectory on which to mount, and what to mount.
 - ``echo "files -rw nfsservername:/nfsdata" >> /etc/auto.nfsdata``
