@@ -65,12 +65,12 @@ Tip: check ``/etc/auto.misc`` for syntax examples on the exam
 To support different directory names in one automount line, wildcards are used.
 
 Put the following line in "/etc/auto.master".
-/home/ldap    /etc/auto.ldap
-This auto mounts all subdirectories under /ldap.
+/homes   /etc/auto.homes
+This auto mounts all subdirectories under /homes.
 
-Let's create the file "/etc/auto.ldap".
+Let's create the file "/etc/auto.homes".
 
-``vim /etc/auto.ldap``
+``vim /etc/auto.homes``
 
 Insert the line.
 ``*    -rw  localhost:/home/ldap/&``
@@ -80,6 +80,6 @@ Let's say you have multiple home directories under "/home/ldap/1", "/home/ldap/2
 When that is done.
 ``systemctl restart autofs``
 
-More coming later...
+More coming later... for now I think it is the end :D 
 
 
