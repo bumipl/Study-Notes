@@ -23,6 +23,10 @@ to whatever is defined in "/etc/selinux/config" after the server is rebooted.
 
 Remember to look at `` man semanage-fcontext`` during the exam. At the bottom you have examples you can use.
 
+Use ``semanage fcontext -a`` to set a new context label. If you get an error that it already exists. Use the -m option.
+
+Use ``semanage fcontext -m`` to modify an existing context label.
+
 When files are created in a directory, they typically inherit the context of the parent directory and most services don't need additional SELinux configuration if default settings are used.
 
 When files are copied, they typically inherit the context of the parent directory. If it's not relabeled correctly you can use ``restorecon -Rv /mydirectory`` 
@@ -32,11 +36,6 @@ A second step is necessary to write it to the filesystem by using ``restorecon``
 
 Instead of using ``restorecon`` you can use ``touch /.autorelabel`` to relabel all files to the context that is specified in the policy. That should be our last option, it happens while rebooting.
 So ``restorecon`` is preferred.
-
-
-Use ``semanage fcontext -a`` to set a new context label. If you get an error that it already exists. Use the -m option.
-
-Use ``semanage fcontext -m`` to modify an existing context label.
 
 **Important for the exam!** See ``man semanage-fcontect`` for documentation.
 
