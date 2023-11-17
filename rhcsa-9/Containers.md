@@ -272,33 +272,6 @@ Run a container that uses that NFS storage. 
 
 See "Auto-Start Containers" section above.
 
-### Bind Mounting in Rootless Containers
-
-To bind-mount directories for rootless containers find the UID of the user
-that runs the main application with ``podman inspect imagename`` or 
-``podman exec containername grep UID /etc/passwd`` if it's already running.
-
-``podman unshare chown user:grp directoryname`` to set the container UID as the 
-owner of the directory on the host that will be mounted in the container.
-The directory name **must be in the user home directory** because otherwise
-it wouldn't be a part of the user namespace!
-
-Use ``podman unshare cat /proc/self/uid_map`` to verify mapping.
-
-Verify the mapped user is the owner on the host using ``ls -ld /directoryname``
-
-#### Steps
-
-``podman run -d -p 3206:3206 --name armdb -v /home/student/armdb:/var/lib/mysql:Z -e MYSQL_ROOT_PASSWORD=123456 registry.access.redhat.com/rhscl/mariadb-100-rhel7``
-
-1. Run as non-root user
-2. ``podman run -d --name armann-db -e MYSQL_ROOT_PASSWORD=123456``
-3. ``podman exec armann-db grep mysql /etc/passwd`` Note down the UID and GID.
-4. ``mkdir armann-db`` Must be in the home directory of the user!
-4. ``ls -Z`` To see Selinux label for the directory armann-db.
-5. 
-
-![rootless containers](pictures/rootless-containers.png)
 
 ### Namespaces
 
