@@ -184,8 +184,8 @@ Edit the file that is generated and change the "WantedBy" line, so it reads "Wan
 
 Manage them using: \
 ``systemctl --user daemon-reload`` \
-``systemct --user enable myapp.service`` (requires linger) \
-``systemctl --user start myapp.service``
+``systemct --user enable container-myapp.service`` (requires linger) \
+``systemctl --user start container-myapp.service``
 
 **``systemctl --user`` commands only work when logging in on console or SSH and do not work in sudo and su sessions.**
 
