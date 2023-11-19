@@ -31,9 +31,9 @@ To quickly open up the firewall to allow NFS. It adds the nfs, mountd and rpc-bi
 On the exam, check **"/etc/auto.misc"** for nice syntax examples that can help if you're stuck!
 You won't see auto.misc until you have installed the autofs package.
 
-Now on the client that will be using autofs, do the following.
+Now on the client that will be using autofs, do the following:
 
-First make sure you can see the exports on from the NFS Server.
+First make sure you can see the exports from the NFS Server.
 
 ``showmount -e nfsservername``
 
@@ -58,7 +58,7 @@ For nfsserver, put the ip or the DNS name of the server you want to automount fr
 Enable and start the autofs service.
 ``systemctl enable --now autofs``
 
-This will automatically create the folders necessary under the root "/" folder. In this example it creates the ''/misc" and "/nfsdata" folders. If you cd /nfsdata, it should be empty. If you ``cd`` into files, even though /nfsdata is empty you will cd into the /nfsdata directory on the nfsserver.
+This will automatically create the folders necessary under the root "/" folder. In this example it creates the ''/misc" and "/nfsdata" folders. If you cd /nfsdata, it should be empty. If you ``cd /nfsdata/files`` into files, even though /nfsdata is empty you will cd into the exported /nfsdata directory on the nfsserver.
 
 Tip: check ``/etc/auto.misc`` for syntax examples on the exam
 
