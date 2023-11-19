@@ -11,7 +11,7 @@ Create the directory that you want to export.
 ``mkdir /nfsdata``
 
 Put it into the exports file. ``vim /etc/exports`` \
-This is just an example, it's insecure, don't use it. ``/nfsdata *(rw,no_root_squash)``
+This is just an example, it's insecure, don't use it. ``/nfsdata *(rw,sync,no_root_squash)``
 
 Enable and start the NFS server in one command.
 ``systemctl enable --now nfs-server``
@@ -23,6 +23,8 @@ To quickly open up the firewall to allow NFS. It adds the nfs, mountd and rpc-bi
 ``firewall-cmd --reload``
 
 ``firewall-cmd --list-all``
+
+``showmount -e``
 
 ## Autofs
 
