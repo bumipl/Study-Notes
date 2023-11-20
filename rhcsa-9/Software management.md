@@ -64,6 +64,7 @@ Let's add the following lines into baseos.repo.
 [baseos] \
 name=baseos \
 baseurl=file:///opt/iso/BaseOS \
+enabled=1
 gpgcheck=0
 
 **Create another repo file.** \
@@ -72,6 +73,7 @@ Call it appstream.repo
 [appstream] \
 name=appstream \
 baseurl=file:///opt/iso/AppStream \
+enabled=1
 gpgcheck=0 
 
 Now we can check to see if our repository file is okay. \
