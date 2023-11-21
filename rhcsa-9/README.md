@@ -30,3 +30,5 @@ Hey! Welcome to my RHCSA 9 think tank. 🤠
 - [Systemd](https://github.com/bumipl/Study-Notes/blob/main/rhcsa-9/Systemd.md)
 - [Time Service](https://github.com/bumipl/Study-Notes/blob/main/rhcsa-9/Time.md)
 - [Users and groups](https://github.com/bumipl/Study-Notes/blob/main/rhcsa-9/Users%20and%20Groups.md)
+- [Task List](https://github.com/bumipl/Study-Notes/blob/main/rhcsa-9/Task-list.md)
+- [Task List Solution](https://github.com/bumipl/Study-Notes/blob/main/rhcsa-9/Task-list-solution.md)
