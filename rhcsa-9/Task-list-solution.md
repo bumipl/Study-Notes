@@ -13,14 +13,12 @@ systemd.unit=multi-user.target rd.break enforcing=0
 
 ### Ctrl-x to boot into rescue mode
 ### Enter
-mount -o rw,remount /sysroot
-chroot /sysroot
+mount -o rw,remount /
 passwd root
-### password twice
-### Ctrl-d twice (just hold ctrl and tap d twice) to fully boot
+touch /.autorelabel
+exec /usr/lib/systemd/systemd/ 
 
 ### Login
-restorecon /etc/shadow
 systemctl set-default multi-user
 systemctl reboot
 ```
