@@ -44,7 +44,7 @@ You can edit either file and both will change, you can also delete "turtles" and
 
 ![The Stat command](pictures/stat-command.png)
 
-## Tar
+## Tar and star
 
 Create an archive and compress it using gzip compression.
 ``tar -czf /home/armando/backup.tgz /etc``
@@ -52,3 +52,14 @@ Create an archive and compress it using gzip compression.
 To use different compression algorithms. Switch out "z" from the above command with either option.
 - j = bzip2
 - J = xz
+
+# Star 
+
+Install star
+``sudo yum install star``
+
+Create an archive
+``star -c -f=/home/john.doe/example.star /etc``
+
+Extract an archive
+``star -x -f=/home/john.doe/example.star``
