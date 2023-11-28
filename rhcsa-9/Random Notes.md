@@ -44,7 +44,7 @@ You can edit either file and both will change, you can also delete "turtles" and
 
 ![The Stat command](pictures/stat-command.png)
 
-## Tar and star
+## Tar
 
 Create an archive and compress it using gzip compression.
 ``tar -czf /home/armando/backup.tgz /etc``
@@ -53,7 +53,7 @@ To use different compression algorithms. Switch out "z" from the above command w
 - j = bzip2
 - J = xz
 
-# Star 
+## Star 
 
 Install star
 ``sudo yum install star``
