@@ -1,6 +1,5 @@
-![[scr/Screenshot from 2024-12-19 12-25-54.png]]
-
-![[scr/Screenshot from 2024-12-19 12-28-12.png]]
+![Opis obrazu](scr/Screenshot%20from%202024-12-19%2012-25-54.png)
+![Opis obrazu](scr/Screenshot%20from%202024-12-19%2012-28-12.png)
 
 # Puppet Server and Agent Documentation
 
