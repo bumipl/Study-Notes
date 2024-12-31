@@ -45,7 +45,7 @@ Puppet supports two main types of template formats:
 
 Templates can be called in manifests to generate content dynamically.
 
-![Opis obrazu](Screenshot%20from%202024-12-30%2010-55-43.png)
+![Opis obrazu](scr/Screenshot%20from%202024-12-30%2010-55-43.png)
 
 ### Example of Calling an EPP Template:
 
