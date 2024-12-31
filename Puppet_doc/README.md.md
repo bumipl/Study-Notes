@@ -1,17 +1,17 @@
-## Table of contents
+## Table of Contents
 
-1. Puppet resources
-2. Puppet Language & structure
-3. Puppet server & agent
-4. Puppet Service and Package Management 
-5. Puppet file serving
-6. Puppet relationships
-7. Puppet facts
-8. Puppet variables
-9. Puppet conditionals
-10. Puppet data types
-11. Puppet functions
-12. Puppet templates
-13. Puppet parameterized classes
-14. Puppet defined resources
-15.  Puppet  resource declaration [advanced]
+1. [Puppet resources](Puppet%20resources.md)
+2. [Puppet Language & structure](Puppet%20Language%20%26%20structure.md)
+3. [Puppet server & agent](Puppet%20server%20%26%20agent.md)
+4. [Puppet Service and Package Management](Puppet%20Service%20and%20Package%20Management.md)
+5. [Puppet file serving](Puppet%20file%20serving.md)
+6. [Puppet relationships](Puppet%20relationships.md)
+7. [Puppet facts](Puppet%20facts.md)
+8. [Puppet variables](Puppet%20variables.md)
+9. [Puppet conditionals](Puppet%20conditionals.md)
+10. [Puppet data types](Puppet%20data%20types.md)
+11. [Puppet functions](Puppet%20functions.md)
+12. [Puppet templates](Puppet%20templates.md)
+13. [Puppet parameterized classes](Puppet%20parameterized%20classes.md)
+14. [Puppet defined resources](Puppet%20defined%20resources.md)
+15. [Puppet resource declaration (advanced)](Puppet%20resource%20declaration%20-%20advanced.md)
