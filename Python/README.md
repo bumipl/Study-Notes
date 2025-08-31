@@ -1,0 +1,53 @@
+# Python Study Notes
+
+Comprehensive documentation for each lesson with explanations and runnable examples.
+
+## Table of Contents
+- [01 Printing & Basic Output](./01_printing_and_output.md)
+- [02 Variables & Basic Types](./02_variables.md)
+- [03 User Input](./03_user_input.md)
+- [04 Type Conversion](./04_type_conversion.md)
+- [05 Strings & Slicing](./05_strings_and_slicing.md)
+- [06 Formatted Strings](./06_formatted_strings.md)
+- [07 String Methods](./07_string_methods.md)
+- [08 Arithmetic Operations](./08_arithmetic_operations.md)
+- [09 Operator Precedence](./09_operator_precedence.md)
+- [10 Math Functions & math Module](./10_math_functions.md)
+- [11 If Statements](./11_if_statements.md)
+- [11 If Statements Exercise](./11_if_statements_exercise.md)
+- [12 Logical Operators](./12_logical_operators.md)
+- [13 Comparison Operators](./13_comparison_operators.md)
+- [14 Weight Converter](./14_weight_converter.md)
+- [15 While Loop](./15_while_loop.md)
+- [16 Guessing Game](./16_guessing_game.md)
+- [17 Car Game](./17_car_game.md)
+- [18 For Loops](./18_for_loops.md)
+- [19 Nested Loops](./19_nested_loops.md)
+- [20 Lists Basics & Max](./20_lists_basics_and_max.md)
+- [21 2D Lists](./21_2d_lists.md)
+- [22 List Methods](./22_list_methods.md)
+- [22 Remove Duplicates Exercise](./22_remove_duplicates_exercise.md)
+- [23 Tuples](./23_tuples.md)
+- [24 Unpacking](./24_unpacking.md)
+- [25 Dictionaries](./25_dictionaries.md)
+- [25 Phone Number Words Exercise](./25_phone_number_words.md)
+- [26 Emoji Converter](./26_emoji_converter.md)
+- [27 Functions Intro](./27_functions_intro.md)
+- [28 Function Parameters](./28_function_parameters.md)
+- [29 Keyword Arguments](./29_keyword_arguments.md)
+- [30 Return Statements](./30_return_statements.md)
+- [31 Exceptions](./31_exceptions.md)
+- [32 Comments](./32_comments.md)
+- [33 Classes Intro](./33_classes_intro.md)
+- [34 Constructors](./34_constructors.md)
+- [35 Inheritance](./35_inheritance.md)
+- [36 Modules](./36_modules.md)
+- [37 Packages](./37_packages.md)
+- [38 Random Module](./38_random_module.md)
+- [39 Pathlib & Directories](./39_pathlib_and_directories.md)
+- [40 pip & PyPI](./40_pip_and_pypi.md)
+
+---
+All lessons documented. Add more advanced topics (files, JSON, testing) as you continue learning.
+
+Full repository: [GitHub - bumipl/Study-Notes](https://github.com/bumipl/Study-Notes#katalog-python)
